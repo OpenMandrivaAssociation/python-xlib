@@ -12,7 +12,6 @@ Patch1: python-xlib-0.13-buffsize.patch
 License: GPL
 Group: Development/Python
 Url: http://python-xlib.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildArch: noarch
 
