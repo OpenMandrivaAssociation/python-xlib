@@ -1,12 +1,12 @@
 %define name python-xlib
-%define version 0.13
-%define release %mkrel 2
+%define version 0.14
+%define release %mkrel 1
 
 Summary: X11R6 client-side implementation
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: http://downloads.sourceforge.net/python-xlib/%{name}-%{version}.tar.gz
 Patch0: python-xlib-0.13-slice.patch
 Patch1: python-xlib-0.13-buffsize.patch
 License: GPL
