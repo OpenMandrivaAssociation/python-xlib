@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc %attr(644,root,root) NEWS PKG-INFO README TODO
+%doc %attr(644,root,root) NEWS README TODO
 %{py_puresitedir}/Xlib
 %{py_puresitedir}/*.egg-info
 
