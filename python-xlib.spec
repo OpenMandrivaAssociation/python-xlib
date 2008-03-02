@@ -7,7 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://downloads.sourceforge.net/python-xlib/%{name}-%{version}.tar.gz
-Patch1: python-xlib-0.13-buffsize.patch
+Patch1: python-xlib-0.14-buffsize.patch
 License: GPL
 Group: Development/Python
 Url: http://python-xlib.sourceforge.net/
