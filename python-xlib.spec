@@ -7,7 +7,6 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://downloads.sourceforge.net/python-xlib/%{name}-%{version}.tar.gz
-Patch0: python-xlib-0.13-slice.patch
 Patch1: python-xlib-0.13-buffsize.patch
 License: GPL
 Group: Development/Python
@@ -23,7 +22,6 @@ client applications in Python.
 
 %prep
 %setup -q
-%patch0 -p1 -b .slice
 %patch1 -p1 -b .buffsize
 
 %build
