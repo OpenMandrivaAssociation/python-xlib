@@ -1,6 +1,6 @@
 %define name python-xlib
 %define version 0.14
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: X11R6 client-side implementation
 Name: %{name}
@@ -23,6 +23,7 @@ client applications in Python.
 %prep
 %setup -q
 %patch1 -p1 -b .buffsize
+chmod -R a+r .
 
 %build
 python setup.py build
@@ -36,7 +37,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc %attr(644,root,root) NEWS README TODO
+%doc NEWS README TODO
 %{py_puresitedir}/Xlib
 %{py_puresitedir}/*.egg-info
 
