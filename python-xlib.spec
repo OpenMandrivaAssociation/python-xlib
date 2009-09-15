@@ -1,6 +1,6 @@
 %define name python-xlib
 %define version 0.14
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: X11R6 client-side implementation
 Name: %{name}
