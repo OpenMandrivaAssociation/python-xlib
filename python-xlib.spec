@@ -1,12 +1,10 @@
-%define name python-xlib
-%define version 0.14
-%define release %mkrel 5
+%define prever rc1
 
 Summary: X11R6 client-side implementation
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://downloads.sourceforge.net/python-xlib/%{name}-%{version}.tar.gz
+Name: python-xlib
+Version: 0.15
+Release: %mkrel -c %{prever} 1
+Source0: http://downloads.sourceforge.net/python-xlib/%{name}-%{version}%{?prever}.tar.bz2
 Patch1: python-xlib-0.14-buffsize.patch
 License: GPL
 Group: Development/Python
@@ -21,7 +19,7 @@ written in pure Python. It can be used to write low-levelish X Windows
 client applications in Python.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}%{?prever}
 %patch1 -p1 -b .buffsize
 chmod -R a+r .
 
