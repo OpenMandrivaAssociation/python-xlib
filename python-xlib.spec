@@ -7,6 +7,7 @@ Source0: https://github.com/python-xlib/python-xlib/releases/download/0.23/pytho
 License: LGPLv2.1+
 Group: Development/Python
 BuildRequires: pkgconfig(python3)
+BuildRequires: python3dist(setuptools)
 BuildArch: noarch
 
 %description
