@@ -8,6 +8,7 @@ License: LGPLv2.1+
 Group: Development/Python
 BuildRequires: pkgconfig(python3)
 BuildRequires: python3dist(setuptools)
+BuildRequires: python3dist(setuptools-scm)
 BuildArch: noarch
 
 %description
