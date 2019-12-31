@@ -1,7 +1,7 @@
 Summary: Python bindings to xlib
 Name: python-xlib
-Version: 0.25
-Release: 2
+Version:	0.26
+Release:	1
 Url: https://github.com/python-xlib/python-xlib
 Source0: https://github.com/python-xlib/python-xlib/releases/download/%{version}/python-xlib-%{version}.tar.bz2
 License: LGPLv2.1+
