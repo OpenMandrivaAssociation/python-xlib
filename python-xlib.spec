@@ -1,7 +1,7 @@
 Summary: Python bindings to xlib
 Name: python-xlib
-Version:	0.31
-Release:	2
+Version:	0.33
+Release:	1
 Url: https://github.com/python-xlib/python-xlib
 Source0: https://github.com/python-xlib/python-xlib/releases/download/%{version}/python-xlib-%{version}.tar.bz2
 License: LGPLv2.1+
@@ -15,13 +15,13 @@ BuildArch: noarch
 Python bindings to xlib.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
 %files
 %defattr(-,root,root)
